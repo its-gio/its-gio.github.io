@@ -1,0 +1,146 @@
+/*this is a comment for the lols!*/
+button:focus {
+  outline: none;
+}
+ul{
+  list-style-type: none;
+}
+/* Parallax */
+#top{
+  position: fixed;
+  z-index: 999;
+  color: aqua;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+
+.Catbug{
+  position: relative;
+  height: 800px;
+  background-image: url(../img/Catbug.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+.sparks{
+  height: 800px;
+  width: 100%;
+  background-image: url(../img/CatbugSparks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.Hi{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+h1{
+  font-family: 'Londrina Shadow', Times Roman;
+  color: white;
+  font-size: 75px;
+}
+
+button .fa{
+  font-size: 20px;
+}
+
+.intro{
+  padding: 50px 0 35px 0;
+  text-align: center;
+}
+
+.knowledge{
+  position: relative;
+  background-image: url(../img/Skillz.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  padding: 50px 0 35px 0;
+}
+
+.skills{
+  color: #fff;
+  padding: 10px 0px 10px 0px;
+}
+
+.work{
+  background-color: black;
+  padding: 50px 0 35px 0; 
+}
+.workXP{
+  text-align: center;
+  font-family: Arial;
+}
+.workXP a, .workXP h2{
+  color: #999;
+}
+.workXP img{
+  position: relative;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.3s ease-in-out;
+}
+.workXP img.showing{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.info{
+  position: relative;
+  background-image: url(../img/.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.info ul{
+  padding: 10px;
+}
+.FA{
+  padding-right: 3px;
+}
+.links{
+  display:-webkit-inline-box;
+  display:-moz-inline-box;
+}
+.links li{
+  margin: 0 3px 0 3px; 
+}
+.links .fa{
+  font-size: 20px;
+}
+/* Media Querys */
+@media (max-width: 768px){
+   div.Hi{
+    top: 20% !important;
+    margin-top: -50px !important;
+  }
+  ul.links{
+    display: block;
+
+  }
+  ul.links li{
+    padding: 3px 0;
+  }
+  hr{
+    max-width: 290px;
+  }
+}
