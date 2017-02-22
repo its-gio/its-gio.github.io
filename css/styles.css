@@ -13,7 +13,7 @@ html, body{
 html, body, button, a, .workXP h2 {
   color: #F1F1F1;
 }
-.intro, .work{
+.intro, .works{
   background-color: #697783;
 }
 
@@ -32,6 +32,9 @@ ul{
 }
 hr{
   max-width: 50px;
+}
+.introCont, .knowledge, .works{
+  padding: 50px 0 35px 0;
 }
 
 #top{
@@ -81,11 +84,11 @@ h1{
 }
 .introCont{
   max-width: 80%;
-  padding: 50px 0 35px 0;
   margin: 0 auto;
 }
 .introCont > .introTxt{
-  flex: 2;
+  flex: 3;
+  text-align: justify;
 }
 .introCont > .cartoon{
   flex: 1;
@@ -101,7 +104,6 @@ h1{
   background-color: #EBEBEB;
   text-align: center;
   color: #1A3742;
-  padding: 50px 0 35px 0;
 }
 .skills, .learning{
   padding: 10px 0px;
@@ -119,29 +121,37 @@ h1{
 }
 
           /*** Previous Work ***/
-.work{
-  padding: 50px 0 35px 0;
-}
-.workXP{
+.workHeader{
   text-align: center;
-  font-family: Arial;
 }
-.workXP img{
-  position: relative;
-  border-radius: 20px;
+.workGrid {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.workGrid > div{
+  flex: 1;
+  min-width: 33%;
+}
+.workImg{
+  max-width: 100%;
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateY(30px);
   transition: all 0.3s ease-in-out;
 }
-.workXP img.showing{
+.workImg.showing{
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateY(0px);
+}
+.workGrid h3, .workGrid p{
+  display: none;
 }
 
+          /*** Footer ***/
 footer{
   background: #1A3742;
 }
-
 .info{
   position: relative;
   background-repeat: no-repeat;

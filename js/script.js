@@ -18,10 +18,10 @@ $(window).scroll(function(){
 	$('.Hi').css({
 		'transform' : 'translate(0px, ' + wScroll/2 +'%)'
 	})
-	if (wScroll > $('.workXP').offset().top-(wHeight/1.8)){
-		$('.workXP img').each(function(i){
+	if (wScroll > $('.workHeader').offset().top-(wHeight/1.8)){
+		$('.workImg').each(function(i){
 			setTimeout(function(){
-				$('.workXP img').eq(i).addClass('showing');
+				$('.workImg').eq(i).addClass('showing');
 			}, 150 * ( i + 1 ));
 		})
 	};
