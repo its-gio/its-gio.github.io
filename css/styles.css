@@ -103,10 +103,10 @@ h1{
   color: #1A3742;
   padding: 50px 0 35px 0;
 }
-.skills{
-  padding: 10px 0px 10px 0px;
+.skills, .learning{
+  padding: 10px 0px;
 }
-.skillGrid{
+.skillGrid, .learningGrid{
   max-width: 80%;
   margin: 0 auto;
 }
@@ -114,7 +114,9 @@ h1{
   flex: 1;
   padding: 0 10px;
 }
-
+.learningGrid > .lSkill{
+  flex: 1;
+}
 
           /*** Previous Work ***/
 .work{
