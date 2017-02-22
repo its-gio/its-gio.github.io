@@ -1,91 +1,128 @@
-/*this is a comment for the lols!*/
-button:focus {
+html, body{
+  background: #EBEBEB;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+html, body, button, a, .workXP h2 {
+  color: #F1F1F1;
+}
+.intro, .work{
+  background-color: #697783;
+}
+
+a:hover, footer > button:hover{
+  color: initial;
+}
+button:focus{
   outline: none;
+}
+button {
+  background: none;
+  border-radius: 20px;
 }
 ul{
   list-style-type: none;
 }
-/* Parallax */
+hr{
+  max-width: 50px;
+}
+
 #top{
   position: fixed;
   z-index: 999;
-  color: aqua;
+  color: #96BDC6;
   bottom: 15px;
   right: 15px;
   display: none;
   cursor: pointer;
 }
 
-.Catbug{
+          /*** Parallax Header ***/
+header{
   position: relative;
   height: 800px;
-  background-image: url(../img/Catbug.jpg);
+  background: linear-gradient(rgba(26,55,66, 0.6), rgba(26,55,66, 0.6)), url(../img/Skillz.jpg);
   background-repeat: no-repeat;
-  background-color: black;
   background-position: top center;
   background-attachment: fixed;
+  background-size: cover;
   overflow: hidden;
   text-align: center;
-  color: white;
-}
-.sparks{
-  height: 800px;
-  width: 100%;
-  background-image: url(../img/CatbugSparks.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
 }
 .Hi{
   height: 100px;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30vh;
   margin-top: -50px;
 }
 h1{
-  font-family: 'Londrina Shadow', Times Roman;
-  color: white;
+  font-family: 'VT323', monospace;
   font-size: 75px;
 }
 
-button .fa{
-  font-size: 20px;
+#BMD{
+  font-size: 1.5em;
+  padding: 5px 15px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
+                    /*** Intro ***/
 .intro{
+  max-width: 100%;
+}
+.introCont{
+  max-width: 80%;
   padding: 50px 0 35px 0;
-  text-align: center;
+  margin: 0 auto;
+}
+.introCont > .introTxt{
+  flex: 2;
+}
+.introCont > .cartoon{
+  flex: 1;
+}
+.cartoon > img{
+  border-radius: 15px;
+  max-width: 200px;
+  max-height: auto;
 }
 
+          /*** Knowledge ***/
 .knowledge{
-  position: relative;
-  background-image: url(../img/Skillz.jpg);
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: top center;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  background-color: #EBEBEB;
   text-align: center;
+  color: #1A3742;
   padding: 50px 0 35px 0;
 }
-
 .skills{
-  color: #fff;
   padding: 10px 0px 10px 0px;
 }
+.skillGrid{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.skillGrid > .skill{
+  flex: 1;
+  padding: 0 10px;
+}
 
+
+          /*** Previous Work ***/
 .work{
-  background-color: black;
   padding: 50px 0 35px 0;
 }
 .workXP{
   text-align: center;
   font-family: Arial;
-}
-.workXP a, .workXP h2{
-  color: #999;
 }
 .workXP img{
   position: relative;
@@ -99,9 +136,12 @@ button .fa{
   transform: translateX(0px);
 }
 
+footer{
+  background: #1A3742;
+}
+
 .info{
   position: relative;
-  background-image: url(../img/.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -128,9 +168,15 @@ button .fa{
 .links .fa{
   font-size: 20px;
 }
+
 /* Media Querys */
 @media (max-width: 768px){
-   div.Hi{
+  #BMD{
+    background-color: #1A3742;
+    padding: 5px 25px;
+    font-weight: 600;;
+  }
+  div.Hi{
     top: 20% !important;
     margin-top: -50px !important;
   }
@@ -141,7 +187,11 @@ button .fa{
   ul.links li{
     padding: 3px 0;
   }
-  hr{
-    max-width: 290px;
+}
+@media (min-width: 768px){
+  #BMD:hover{
+    background-color: #1A3742;
+    padding: 5px 25px;
+    font-weight: 600;;
   }
 }

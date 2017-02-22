@@ -4,6 +4,7 @@ $(document).ready(function(){
 			scrollTop: "800px"
 		}, 800);
 	});
+	//Scrolls To Top
 	$("#top").click(function(e){
 	$('html, body').animate({
 		scrollTop: "0px"
@@ -11,12 +12,9 @@ $(document).ready(function(){
 	e.preventDefault();
 	});
 });
+
 $(window).scroll(function(){
-	var wScroll = $(this).scrollTop(),
-	wHeight = $(window).height();
-	$('.sparks').css({
-		'transform' : 'translate(0px, ' + wScroll/10 +'%)'
-	})
+	var wScroll = $(this).scrollTop(), wHeight = $(window).height();
 	$('.Hi').css({
 		'transform' : 'translate(0px, ' + wScroll/2 +'%)'
 	})
@@ -24,7 +22,7 @@ $(window).scroll(function(){
 		$('.workXP img').each(function(i){
 			setTimeout(function(){
 				$('.workXP img').eq(i).addClass('showing');
-			}, 150 * (i+1));
+			}, 150 * ( i + 1 ));
 		})
 	};
 	if(wScroll > $('.info').offset().top-(wHeight)){
