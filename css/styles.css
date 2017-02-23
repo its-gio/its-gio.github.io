@@ -187,7 +187,30 @@ button > i.fa{
 /* Media Querys */
 /* First break at 815px */
 @media (max-width: 815px){
-  
+  .introCont{
+    flex-direction: column;
+  }
+  .introCont > .cartoon{
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 785px){
+  .skillGrid, .workGrid{
+    flex-direction: column;
+  }
+  .workTxt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(26,55,66, 0.6);
+    display: table;
+  }
+}
+@media (max-width: 775px){
+  .learningGrid{
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px){
   #BMD{
