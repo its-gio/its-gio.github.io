@@ -1,10 +1,4 @@
 $(document).ready(function(){
-	$('#BMD').click(function(){
-		$('html, body').animate({
-			scrollTop: "800px"
-		}, 800);
-	});
-	//Scrolls To Top
 	$("#top").click(function(e){
 	$('html, body').animate({
 		scrollTop: "0px"
