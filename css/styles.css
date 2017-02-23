@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html, body{
   background: #EBEBEB;
   margin: 0;
@@ -10,7 +13,7 @@ html, body{
   display: -webkit-flex;
   display: flex;
 }
-html, body, button, a, .workXP h2 {
+html, body, button, a, .works h3, .works p{
   color: #F1F1F1;
 }
 .intro, .works{
@@ -91,7 +94,7 @@ h1{
   padding: 0 10px;
 }
 .cartoon > img{
-  border-radius: 15px;
+  border-radius: 100%;
   max-width: 200px;
   max-height: auto;
 }
@@ -154,20 +157,6 @@ h1{
 .workTxt{
   display: none;
 }
-.workImg, .workTxt{
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-.workImg:hover + .workTxt, .workTxt:hover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: table;
-}
 .txtCenter{
   display: table-cell;
   vertical-align: middle;
@@ -177,38 +166,29 @@ h1{
           /*** Footer ***/
 footer{
   background: #1A3742;
-}
-.info{
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 12px;
 }
-
 .info ul{
   padding: 10px;
 }
 .FA{
   padding-right: 3px;
 }
-.links{
-  display:-webkit-inline-box;
-  display:-moz-inline-box;
+button > i.fa{
+  font-size: 2em;
 }
-.links li{
-  margin: 0 3px 0 3px;
-}
-.links .fa{
-  font-size: 20px;
+.plug{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 /* Media Querys */
 /* First break at 815px */
+@media (max-width: 815px){
+  
+}
 @media (max-width: 768px){
   #BMD{
     background-color: #1A3742;
@@ -219,14 +199,32 @@ footer{
     top: 20% !important;
     margin-top: -50px !important;
   }
-  ul.links li{
-    padding: 3px 0;
-  }
 }
+/*hovers*/
 @media (min-width: 768px){
   #BMD:hover{
     background-color: #1A3742;
     padding: 5px 25px;
     font-weight: 600;;
+  }
+  .workImg:hover + .workTxt, .workTxt:hover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100.07%;
+    background-color: rgba(26,55,66, 0.9);
+    display: table;
+  }
+  .plug:hover{
+    padding: 0px 10px;
+  }
+  .github:hover{
+    color: #111;
+  }
+  .codepen:hover{
+    color: #666;
+  }
+  .linkedin:hover{
+    color: #0077b5;
   }
 }
