@@ -51,7 +51,7 @@ hr{
 header{
   position: relative;
   height: 800px;
-  background: linear-gradient(rgba(26,55,66, 0.6), rgba(26,55,66, 0.6)), url(../img/Skillz.jpg);
+  background: linear-gradient(rgba(26,55,66, 0.4), rgba(26,55,66, 0.4)), url(../img/Skillz.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -86,17 +86,21 @@ h1{
   max-width: 80%;
   margin: 0 auto;
 }
-.introCont > .introTxt{
-  flex: 3;
-  text-align: justify;
-}
 .introCont > .cartoon{
   flex: 1;
+  padding: 0 10px;
 }
 .cartoon > img{
   border-radius: 15px;
   max-width: 200px;
   max-height: auto;
+}
+.introCont > .introTxt{
+  flex: 3;
+  text-align: justify;
+}
+.introTxt h2{
+  margin-top: 0;
 }
 
           /*** Knowledge ***/
@@ -130,9 +134,12 @@ h1{
   width: 100%;
   height: auto;
 }
-.workGrid > div{
+.workGrid > .work{
   flex: 1;
-  min-width: 33%;
+  min-width: 33.9%;
+}
+.work{
+  position: relative;
 }
 .workImg{
   max-width: 100%;
@@ -144,8 +151,27 @@ h1{
   opacity: 1;
   transform: translateY(0px);
 }
-.workGrid h3, .workGrid p{
+.workTxt{
   display: none;
+}
+.workImg, .workTxt{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.workImg:hover + .workTxt, .workTxt:hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: table;
+}
+.txtCenter{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
           /*** Footer ***/
@@ -182,6 +208,7 @@ footer{
 }
 
 /* Media Querys */
+/* First break at 815px */
 @media (max-width: 768px){
   #BMD{
     background-color: #1A3742;
@@ -191,10 +218,6 @@ footer{
   div.Hi{
     top: 20% !important;
     margin-top: -50px !important;
-  }
-  ul.links{
-    display: block;
-
   }
   ul.links li{
     padding: 3px 0;
