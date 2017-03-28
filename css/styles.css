@@ -213,6 +213,8 @@ button > i.fa{
     width: 100%;
     background-color: rgba(26,55,66, 0.6);
     display: table;
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media (max-width: 775px){
