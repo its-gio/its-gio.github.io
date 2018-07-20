@@ -139,7 +139,7 @@ h1{
 }
 .workGrid > .work{
   flex: 1;
-  min-width: 33.9%;
+  flex-basis: 33.33%;
 }
 .work{
   position: relative;
@@ -192,7 +192,7 @@ button > i.fa{
   transition-duration: 0.4s;
 }
 
-/* Media Querys */
+/* Media Queries */
 /* First break at 815px */
 @media (max-width: 815px){
   .introCont{
