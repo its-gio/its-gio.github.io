@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.scss";
+import Banner from "./components/Banner";
 
 function App() {
-  return <div id="banner">Redo!</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
 export default App;
