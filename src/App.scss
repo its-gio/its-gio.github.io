@@ -10,6 +10,10 @@
   color: #aaa;
 }
 
+html {
+  font-size: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -19,4 +23,8 @@ h5,
 h6 {
   font-family: "Merriweather Sans", sans-serif;
   color: #eee;
+}
+
+p {
+  line-height: 1.5;
 }
