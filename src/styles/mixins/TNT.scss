@@ -1,0 +1,27 @@
+$hr-space: 20px;
+
+@mixin title-and-tagline {
+  position: absolute;
+  max-width: 900px;
+  width: 100%;
+  padding: 10px 15px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__title {
+    &::after {
+      content: " ";
+      display: block;
+      max-width: 900px;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid #aaa;
+      padding-top: $hr-space;
+    }
+  }
+
+  &__tagline {
+    padding-top: $hr-space;
+  }
+}
