@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import Banner from "./components/Banner";
 import Meet from "./components/Meet";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
