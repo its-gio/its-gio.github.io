@@ -1,0 +1,22 @@
+@import "./mixins/TNT.scss";
+@import "./mixins/Overlap.scss";
+
+.skills {
+  @include overlap(right, #3f4e85);
+
+  &-inner {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--content,
+    &--list {
+      margin: 0 10px;
+    }
+
+    &--content {
+      @include title-and-tagline;
+      padding-bottom: 40px;
+    }
+  }
+}

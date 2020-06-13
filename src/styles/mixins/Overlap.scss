@@ -1,7 +1,7 @@
 @mixin overlap($transSide, $color) {
   position: relative;
-  background-color: #45558d;
-  padding: 60px 15px;
+  background-color: $color;
+  padding: 60px 15px 90px 15px;
 
   &::before {
     content: " ";
