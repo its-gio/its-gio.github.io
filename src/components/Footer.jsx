@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  AiFillMail,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillCodepenCircle,
+} from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -11,6 +17,45 @@ export default function Footer() {
             reach out!
           </p>
         </div>
+
+        <div className="footer-inner--connect">
+          <div className="footer-inner--connect__links">
+            <a target="_blank" href="mailto: media@its-g.io" className="link">
+              <AiFillMail />
+              Media@its-g.io
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/giovani-aguirre/"
+              className="link"
+            >
+              <AiFillLinkedin />
+              Linkedin
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/its-gio"
+              className="link"
+            >
+              <AiFillGithub />
+              Github
+            </a>
+            <a
+              target="_blank"
+              href="https://codepen.io/its-gio/"
+              className="link"
+            >
+              <AiFillCodepenCircle />
+              Codepen
+            </a>
+          </div>
+
+          <div className="footer-inner--connect__form"></div>
+        </div>
+      </div>
+
+      <div className="footer-reserved">
+        <p>&copy; All rights reserved.</p>
       </div>
     </div>
   );
