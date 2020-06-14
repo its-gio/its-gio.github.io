@@ -1,4 +1,4 @@
-@mixin overlap($transSide, $color) {
+@mixin overlap($transSide, $color, $location: top) {
   position: relative;
   background-color: $color;
   padding: 60px 15px 90px 15px;
@@ -6,7 +6,7 @@
   &::before {
     content: " ";
     background-image: linear-gradient(
-      to $transSide top,
+      to $transSide $location,
       $color 0%,
       $color 50%,
       transparent 50%

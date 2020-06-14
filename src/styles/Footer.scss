@@ -2,8 +2,8 @@
 @import "./mixins/Overlap.scss";
 
 .footer {
-  @include overlap(right, none);
-  position: relative;
+  @include overlap(right, #3f4e85, bottom);
+  padding-top: 90px;
   height: 90vh;
   background-image: linear-gradient(
       to top,
@@ -15,6 +15,10 @@
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+
+  &::before {
+    top: 0%;
+  }
 
   &-inner {
     display: flex;
