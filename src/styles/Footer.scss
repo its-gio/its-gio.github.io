@@ -1,0 +1,29 @@
+@import "./mixins/TNT.scss";
+@import "./mixins/Overlap.scss";
+
+.footer {
+  @include overlap(right, none);
+  position: relative;
+  height: 90vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(46, 49, 65, 0.7),
+      rgba(46, 49, 65, 0.7)
+    ),
+    url(../img/stay-connected.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+
+  &-inner {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    &--content {
+      @include title-and-tagline;
+    }
+  }
+}

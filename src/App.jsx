@@ -3,6 +3,7 @@ import "./App.scss";
 import Banner from "./components/Banner";
 import Meet from "./components/Meet";
 import Skills from "./components/Skills/Skills";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Banner />
       <Meet />
       <Skills />
+      <Footer />
     </>
   );
 }
