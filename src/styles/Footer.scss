@@ -8,7 +8,6 @@
   justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 60px;
-  height: 75vh;
   background-image: linear-gradient(
       to top,
       rgba(46, 49, 65, 0.7),
@@ -17,7 +16,7 @@
     url(../img/stay-connected.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
 
   &::before {
@@ -57,6 +56,10 @@
             margin-right: 10px;
           }
         }
+      }
+
+      @media (max-width: 385px) {
+        flex-direction: column;
       }
     }
   }
