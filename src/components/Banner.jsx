@@ -4,11 +4,10 @@ function Banner() {
   return (
     <div className="banner">
       <div className="banner--inner">
-        <h1 className="banner--inner__title">Hey, I'm Gio!</h1>
+        <h1 className="banner--inner__title">Full-Stack Web Developer</h1>
         <p className="banner--inner__tagline">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt
-          ratione eligendi nulla libero beatae laborum ipsa illum adipisci
-          accusamus quidem illo.
+          Welcome to my little piece of the internet! Always a work in progress
+          and loving the journey.
         </p>
       </div>
     </div>
