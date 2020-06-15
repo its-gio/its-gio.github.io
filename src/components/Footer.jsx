@@ -20,7 +20,12 @@ export default function Footer() {
 
         <div className="footer-inner--connect">
           <div className="footer-inner--connect__links">
-            <a target="_blank" href="mailto: media@its-g.io" className="link">
+            <a
+              target="_blank"
+              href="mailto: media@its-g.io"
+              className="link"
+              rel="noopener noreferrer"
+            >
               <AiFillMail />
               Media@its-g.io
             </a>
@@ -28,6 +33,7 @@ export default function Footer() {
               target="_blank"
               href="https://www.linkedin.com/in/giovani-aguirre/"
               className="link"
+              rel="noopener noreferrer"
             >
               <AiFillLinkedin />
               Linkedin
@@ -36,6 +42,7 @@ export default function Footer() {
               target="_blank"
               href="https://github.com/its-gio"
               className="link"
+              rel="noopener noreferrer"
             >
               <AiFillGithub />
               Github
@@ -44,6 +51,7 @@ export default function Footer() {
               target="_blank"
               href="https://codepen.io/its-gio/"
               className="link"
+              rel="noopener noreferrer"
             >
               <AiFillCodepenCircle />
               Codepen
