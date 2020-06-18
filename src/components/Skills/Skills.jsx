@@ -24,7 +24,7 @@ export default function Skills() {
     {
       title: "React/Redux",
       desc:
-        "A javascript based library made to simply build SAPs and a simple way to add global state to react apps",
+        "A javascript based library made to simply build SAPs and a simple way to add global state to React apps",
       icon: DiReact,
     },
     {
@@ -40,9 +40,9 @@ export default function Skills() {
       icon: DiNodejsSmall,
     },
     {
-      title: "Postgress",
+      title: "Postgresql",
       desc:
-        "Query language that makes request to changes or get information from database",
+        "A query language that makes request to get or change information from databases",
       icon: DiPostgresql,
     },
   ];
